@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<title>Terms and Conditions</title>
+<meta name="description" content="Fundraising script Terms and Conditions" />
+<meta name="keywords" content="Fundraising script Terms and Conditions" />
+
+<link href="http://spicyfund.com/demo/css/style.css" rel="stylesheet" type="text/css" />
+<link href="http://spicyfund.com/demo/FundrisingCss.css" rel="stylesheet" type="text/css" />
+
+<script src="http://spicyfund.com/demo/js/mootools-core-1.3-full.js" type="text/javascript"></script> 
+<script src="http://spicyfund.com/demo/js/mootools-more-1.3-full.js" type="text/javascript"></script> 
+<script src="http://spicyfund.com/demo/js/mootools-art-0.87.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src="http://spicyfund.com/demo/js/clickMe.js" ></script>
+
+
+<!--[if lte IE 7]> 
+    
+	<link href="http://spicyfund.com/demo/ie7.css" rel="stylesheet" type="text/css" />
+	
+<![endif]-->
+
+<!--[if gte IE 7]>
+<style type="text/css">
+.file_img input[type=file], .file_upload input[type=file]{
+/*opacity: 0;
+-moz-opacity: 0;
+filter:progid : DXImageTransform.Microsoft.Alpha(opacity=0);*/
+cursor:pointer;
+filter:alpha(opacity=0);
+        -moz-opacity:0.5;
+        -khtml-opacity: 0.9;
+        opacity: 0.0;
+}
+
+
+
+.searchtext{
+	padding:3px 8px;
+}
+.campaigns{
+	padding:20px 0px 0px 0px;
+}
+.widget .widgetlogo{
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+
+<div style="margin:0px auto; color:#003366; font-weight:bold;  position:fixed; height:25px; background:#D8D8D8;  opacity:0.6;  filter:alpha(opacity=60);width:100%;">
+
+<a href="http://spicyfund.com/demo/home/login" style="font-weight:bold; color:#006600;">Click here for User Demo</a> Login Email: <b style="color:#000000;">user@demo.com</b> and Password: <b style="color:#000000;">userdemo</b>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/admin/" target="_blank" style="font-weight:bold; color:#006600;">Click here for Admin Demo</a> Login Username: <b style="color:#000000;">admin</b> and Password: <b style="color:#000000;">admin</b>
+
+</div>
+	
+    
+    
+
+
+  <script type="text/javascript">
+	function autotext(){
+		var xmlHttp;
+		try{
+			xmlHttp=new XMLHttpRequest();// Firefox, Opera 8.0+, Safari
+		}
+		catch (e){
+			try{
+				xmlHttp=new ActiveXObject("Msxml2.XMLHTTP"); // Internet Explorer
+			}
+			catch (e){
+				try{
+					xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch (e){
+					alert("No AJAX!?");
+					return false;
+				}
+			}
+		}
+		xmlHttp.onreadystatechange=function(){
+			if(xmlHttp.readyState==4){
+				document.getElementById('autoc').innerHTML=xmlHttp.responseText;
+				
+				if(document.getElementById('srhdiv'))
+				{
+					var hht = document.getElementById('srhdiv').offsetHeight + 'px';
+					document.id('autoc').set('tween', {
+						duration: 1000,
+						transition: Fx.Transitions.Bounce.easeOut // This could have been also 'bounce:out'
+					}).tween('height', hht);
+				}else{
+					var hht = '0px';
+					document.getElementById('autoc').style.height = '0px';
+				}
+			}
+		}
+		var text = document.getElementById('searchprj').value;
+		xmlHttp.open("GET","http://spicyfund.com/demo//home/search_autocomplete/"+text+"/"+1330435807,true);
+		xmlHttp.send(null);
+	}
+	
+	function selecttext(el)
+	{
+		document.getElementById('searchprj').value = el.innerHTML;
+		document.id('autoc').set('tween', {}).tween('height', '0px');
+		setTimeout(function(){
+			el.parentNode.innerHTML = '';
+		},500);
+		document.frmsearch.submit();
+	}
+	
+	window.addEvent('domready', function(){
+		document.id('autoc').set('tween', {}).tween('height', '0px');
+	});
+</script>
+	
+<!--
+      <div id="rec-donation"> Total Transaction
+        <h6></h6>
+        Total Earnings
+        <h6>$ </h6>
+      </div>
+     
+
+-->
+<style type="text/css">
+#header h1 a,#header h1 a:visited{
+	text-indent: -9999px;
+	display:block;
+	width: 291px;
+	height: 49px;
+	background: url(http://spicyfund.com/demo/upload/orig/21103logo.png) no-repeat;
+	margin: 20px 0 0 0;
+}
+#header h1 a:hover{
+	background: url(http://spicyfund.com/demo/upload/orig/94315logo_hover.png) no-repeat;
+}
+#header h1 a,#header h1 a:visited{
+	cursor:pointer;
+}
+#header a{
+	color: #555;
+}
+</style>
+
+<div id="header">
+<div class="wrap930" id="header">
+    <!--<a href=""><div class="logo"></div></a>-->
+	<h1 class="left"><a href="http://spicyfund.com/demo/">Fund Raising Script</a></h1>
+  
+  
+  
+ 
+
+<style type="text/css">
+
+.fb_button, .fb_button_rtl
+{
+background:none;
+background-color:none;
+}
+
+.fb_button fb_button_medium, .fb_button_text
+{
+width:20px;
+height:20px;
+}
+
+.fb_button .fb_button_text, .fb_button_rtl .fb_button_text
+{
+border:none;
+background:none;
+}
+
+.fb_button .fb_button_text, .fb_button_rtl .fb_button_text
+{
+margin:0px;
+padding:0px;
+}
+
+#fb-root div{ left:0; }
+
+</style>
+    	
+					
+		
+		
+		
+		
+	<div id="testdiv" class="right">
+		 
+			
+			<table><tr>
+            
+            
+            <td align="left" valign="top"><a href="http://gofundmeclone.com/spanish/" title="Spanish" target="_blank"><img src="http://spicyfund.com/demo/images/spain.png" border="0" /></a></td>
+			
+			<td align="left" valign="top" style="padding-right:50px;"><a href="http://spicyfund.com/fund_portuguese" title="Portuguese" target="_blank"><img src="http://spicyfund.com/demo/images/portuguese.png" border="0" /></a></td>
+            
+            
+			 <div  id="fb-root"></div>
+			 <script type="text/javascript">
+			window.fbAsyncInit = function() {
+	        	FB.init({appId: '267602683309826', status: true, cookie: true, xfbml: true});
+	 
+	            /* All the events registered */
+	            FB.Event.subscribe('auth.login', function(response) {
+	    			// do something with response
+	             //   login();
+	        	});
+	
+	            FB.Event.subscribe('auth.logout', function(response) {
+	            // do something with response
+	               // logout();
+	          	});
+	   		};
+	
+	        (function() {
+		        var e = document.createElement('script');
+	            e.type = 'text/javascript';
+	            e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		        e.async = true;
+	            document.getElementById('fb-root').appendChild(e);
+	   	 	}());
+	 
+	        function login(){
+	        	//document.location.href = "";
+	     	}
+	
+	        function logout(){
+	        	//document.location.href = "";
+	 		}
+		</script>
+		<!-- END OF FB CODE -->	
+						<td valign="top">
+			
+				<a href="https://www.facebook.com/login.php?api_key=267602683309826&cancel_url=http://spicyfund.com/demo/home&display=page&fbconnect=1&next=http://spicyfund.com/demo/home/facebook&return_session=1&session_version=3&v=1.0&req_scope=email,read_stream,offline_access,user_birthday,status_update,publish_stream"><img src="http://spicyfund.com/demo/images/facebook.png" border="0" height="21" width="21" name="MyImage" onmouseover="document.MyImage.src='http://spicyfund.com/demo/images/facebook-ho.png';" onmouseout="document.MyImage.src='http://spicyfund.com/demo/images/facebook.png';"/></a>
+			
+					
+		</td>
+		<td valign="top">
+		
+			<a  href="http://spicyfund.com/demo/home/twitter_auth" >
+<img src="http://spicyfund.com/demo/images/twitter.png" width="21" height="21" name="twitter_img" onmouseover="document.twitter_img.src='http://spicyfund.com/demo/images/twitter-ho.png';" onmouseout="document.twitter_img.src='http://spicyfund.com/demo/images/twitter.png';" alt="sign in with twitter" border="0" /></a>
+
+</td>
+			
+			
+			<td>
+			
+						
+			<a href="http://spicyfund.com/demo/home/login">Sign In</a> |
+			
+			<!-- Mask to cover the whole screen -->
+			 
+			<a href="http://spicyfund.com/demo/home/signup" class='sign'>Sign Up</a>						
+			</td></tr></table>
+			
+		 </div>
+		 
+		 
+		 
+
+
+
+	
+		 
+		 	
+	
+<div class="clear"></div>
+	  
+	  
+				
+		
+	  
+		<div class="navigation">
+			<div class="nav">
+				<ul id="minislide">
+					<li><a href="http://spicyfund.com/demo/">Home</a></li>  <li class="line">|</li>   
+					<li><a href="http://spicyfund.com/demo/home/search">Search</a></li>  <li class="line">|</li>
+					<li><a href="http://spicyfund.com/demo/help">Help</a><ul></ul></li><li class="line">|</li><li><a href="http://spicyfund.com/demo/home/content/terms-and-conditions/12">Terms and Conditions</a><ul></ul></li><li class="line">|</li><li><a href="http://spicyfund.com/demo/home/contact_us">Contact Us</a><ul></ul></li><li class="line">|</li>				</ul>
+			</div>
+			<script type="text/javascript" language="javascript">
+				function remove_text()
+				{
+					if(document.getElementById('searchprj').value == "search" || document.getElementById('searchprj').value == "please enter search keyword")
+					{
+						document.getElementById('searchprj').value = "";
+					}
+				}
+				function set_text()
+				{
+					if(document.getElementById('searchprj').value == "")
+					{
+						document.getElementById('searchprj').value = document.getElementById('searchval').value;
+					}
+				}
+				function form_validate()
+				{
+					if(document.getElementById('searchprj').value == "" || document.getElementById('searchprj').value == "search" || document.getElementById('searchprj').value == "please enter search keyword")
+					{
+						document.getElementById('searchprj').value = "please enter search keyword";
+						document.getElementById('searchval').value = "please enter search keyword";
+						return false;
+					}else{
+						document.frmsearch.submit();
+					}
+				}
+			</script>
+			<div class="search">
+			<form action="http://spicyfund.com/demo/home/search" method="post" name="frmsearch" onsubmit="return form_validate()" autocomplete="off">			
+					<input type="text" name="searchprj" id="searchprj" class="searchtext" value="please enter search keyword" onfocus="remove_text();" onblur="set_text()" onkeyup="autotext();" />
+					<input type="button" class="searchbtn" value="Search" onclick="form_validate();" />
+					<input type="hidden" name="searchval" id="searchval" value="please enter search keyword" />
+				</form>
+				<div id="autoc" ></div>
+			</div>
+		</div>
+	
+<div class="clear"></div>
+   
+  </div>
+  
+ 
+  
+</div>
+
+<div id="headerbar">
+<div class="wrap930">
+ <!--   follow-like code - start -->
+  
+	 <script type="text/javascript">
+    function ajaxfollow_proj(id)
+    {   
+		var strURL="http://spicyfund.com/demo/project/follow_project/"+id;
+		
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			//alert(xmlhttp.responseText);
+			if(xmlhttp.responseText=='login_failed'){
+				window.location.href='http://spicyfund.com/demo/home/login/aHR0cDovL3NwaWN5ZnVuZC5jb20vZGVtby9ob21lL2NvbnRlbnQvdGVybXMtYW5kLWNvbmRpdGlvbnMvMTI=';
+				
+				}
+			else{
+			document.getElementById("follow").innerHTML=xmlhttp.responseText;}
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+	 function ajaxunfollow_proj(id)
+    {   
+		var strURL="http://spicyfund.com/demo/project/unfollow_project/"+id;
+		// alert(strURL);
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 // alert('res'+xmlhttp.responseText);
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			
+			document.getElementById("follow").innerHTML=xmlhttp.responseText;
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+	
+	  function ajaxlike_proj(id)
+     {   
+		var strURL="http://spicyfund.com/demo/project/like_project/"+id;
+		// alert(strURL);
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 // alert('res'+xmlhttp.responseText);
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			//alert(xmlhttp.responseText);
+			if(xmlhttp.responseText=='login_failed'){
+				window.location.href='http://spicyfund.com/demo/home/login/aHR0cDovL3NwaWN5ZnVuZC5jb20vZGVtby9ob21lL2NvbnRlbnQvdGVybXMtYW5kLWNvbmRpdGlvbnMvMTI=';
+				
+				}
+			else{
+			document.getElementById("like").innerHTML=xmlhttp.responseText;}
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+	 function ajaxunlike_proj(id)
+    {   
+		var strURL="http://spicyfund.com/demo/project/unlike_project/"+id;
+		// alert(strURL);
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 // alert('res'+xmlhttp.responseText);
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			
+			document.getElementById("like").innerHTML=xmlhttp.responseText;
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+
+
+</script>
+      
+  <!-- End - follow-like code -->
+	
+
+	<a href="http://spicyfund.com/demo/home/search" class='browse'>Browse All Projects</a></div>
+</div> 
+
+<div class="clear"></div>
+
+
+ 
+   	 	    
+	<!--<div id="widgetm"></div>-->
+<!--<script src="http://localhost/fundmeonline/project/embed_code/narrow/4" type="text/javascript" language="javascript"></script>-->
+<!--<script src='http://localhost/fundmeonline/project/widgets_code/m/yellow/10' type='text/javascript'></script>-->
+ <!--====================left==============--> 
+
+  	<div id="container">
+<div class="wrap930">	
+  
+        		
+<div class="con_left2">
+   <h2>Terms and Conditions</h2>
+    
+	<div><span style="color: rgb(51, 51, 51); font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255); "> </span></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">PLEASE READ THESE TERMS OF USE (&quot;AGREEMENT&quot; OR &quot;TERMS OF USE&quot;) CAREFULLY BEFORE USING THE SERVICES OFFERED BY Rockers Technologies. (&quot;COMPANY&quot;). THIS AGREEMENT SETS FORTH THE LEGALLY BINDING TERMS AND CONDITIONS FOR YOUR USE OF THE WEBSITE AT www.gofundmeclone.com (THE &quot;SITE&quot;) AND THE SERVICE OWNED AND OPERATED BY COMPANY (COLLECTIVELY WITH THE SITE, THE &quot;SERVICE&quot;). BY USING THE SITE OR SERVICE IN ANY MANNER, INCLUDING BUT NOT LIMITED TO VISITING OR BROWSING THE SITE, YOU AGREE TO BE BOUND BY THIS AGREEMENT. THIS AGREEMENT APPLIES TO ALL USERS OF THE SITE OR SERVICE, INCLUDING USERS WHO ARE ALSO CONTRIBUTORS OF CONTENT, INFORMATION, AND OTHER MATERIALS OR SERVICES ON THE SITE.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Acceptance of Terms</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">The Service is offered subject to acceptance without modification of all of the terms and conditions contained herein (the &quot;Terms of Use&quot;), which term also incorporates the Privacy Policy available at<a style="color: rgb(85, 164, 242); text-decoration: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; " href="http://www.kickstarter.com/privacy">?</a><a href="http://www.gofundmeclone.com/home/content/privacy-policy/13">http://www.gofundmeclone.com/home/content/privacy-policy/13</a>, and all other operating rules, policies and procedures that may be published from time to time on the Site by Company, each of which is incorporated by reference and each of which may be updated by Company from time to time without notice to you. In addition, some services offered through the Service may be subject to additional terms and conditions promulgated by Company from time to time; your use of such services is subject to those additional terms and conditions, which are incorporated into these Terms of Use by this reference.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">The Service is available only to individuals who are at least 18 years old. You represent and warrant that if you are an individual, you are of legal age to form a binding contract, and that all registration information you submit is accurate and truthful. Company may, in its sole discretion, refuse to offer the Service to any person or entity and change its eligibility criteria at any time. This provision is void where prohibited by law and the right to access the Service is revoked in such jurisdictions.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Modification of Terms of Use</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Company reserves the right, at its sole discretion, to modify or replace any of the Terms of Use, or change, suspend, or discontinue the Service (including without limitation, the availability of any feature, database, or content) at any time by posting a notice on the Site or by sending you an email. Company may also impose limits on certain features and services or restrict your access to parts or all of the Service without notice or liability. It is your responsibility to check the Terms of Use periodically for changes. Your continued use of the Service following the posting of any changes to the Terms of Use constitutes acceptance of those changes.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Rules and Conduct</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">As a condition of use, you promise not to use the Service for any purpose that is prohibited by the Terms of Use. The Service (including, without limitation, any Content or User Submissions (both as defined below)) is provided only for your own personal, non-commercial use (except as allowed by the terms set forth in the Projects: Fund-Raising and Commerce section of the Terms of Use). You are responsible for all of your activity in connection with the Service. For purposes of the Terms of Use, the term &quot;Content&quot; includes, without limitation, any User Submissions, videos, audio clips, written forum comments, information, data, text, photographs, software, scripts, graphics, and interactive features generated, provided, or otherwise made accessible by Company or its partners on or through the Service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">By way of example, and not as a limitation, you shall not (and shall not permit any third party to) either (a) take any action or (b) upload, download, post, submit or otherwise distribute or facilitate distribution of any content on or through the Service, including without limitation any User Submission, that:</div>
+<ul style="margin-top: 0px; margin-right: 1.5em; margin-bottom: 1.5em; margin-left: 1.5em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; list-style-type: square; list-style-position: initial; list-style-image: initial; ">
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">infringes any patent, trademark, trade secret, copyright, right of publicity or other right of any other person or entity or violates any law or contractual duty;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">you know is false, misleading, untruthful or inaccurate;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">is unlawful, threatening, abusive, harassing, defamatory, libelous, deceptive, fraudulent, invasive of another's privacy, tortious, obscene, offensive, or profane;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">constitutes unsolicited or unauthorized advertising or promotional material or any junk mail, spam or chain letters;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">contains software viruses or any other computer codes, files, or programs that are designed or intended to disrupt, damage, limit or interfere with the proper function of any software, hardware, or telecommunications equipment or to damage or obtain unauthorized access to any system, data, password or other information of Company or any third party; or</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">impersonates any person or entity, including any employee or representative of Company.</li>
+</ul>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Additionally, you shall not: (i) take any action that imposes or may impose (as determined by Company in its sole discretion) an unreasonable or disproportionately large load on Company&rsquo;s (or its third party providers&rsquo;) infrastructure; (ii) interfere or attempt to interfere with the proper working of the Service or any activities conducted on the Service; (iii) bypass any measures Company may use to prevent or restrict access to the Service (or other accounts, computer systems or networks connected to the Service); (iv) run Maillist, Listserv, any form of auto-responder or &quot;spam&quot; on the Service; or (v) use manual or automated software, devices, or other processes to &quot;crawl&quot; or &quot;spider&quot; any page of the Site.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">You shall not (directly or indirectly): (i) decipher, decompile, disassemble, reverse engineer or otherwise attempt to derive any source code or underlying ideas or algorithms of any part of the Service, except to the limited extent applicable laws specifically prohibit such restriction, (ii) modify, translate, or otherwise create derivative works of any part of the Service, or (iii) copy, rent, lease, distribute, or otherwise transfer any of the rights that you receive hereunder. You shall abide by all applicable local, state, national and international laws and regulations.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Company does not guarantee that any Content or User Submissions (as defined below) will be made available on the Site or through the Service. Company has no obligation to monitor the Site, Service, Content, or User Submissions. However, Company reserves the right to (i) remove, edit or modify any Content in its sole discretion, including without limitation any User Submissions, from the Site or Service at any time, without notice to you and for any reason (including, but not limited to, upon receipt of claims or allegations from third parties or authorities relating to such Content or if Company is concerned that you may have violated the Terms of Use), or for no reason at all and (ii) to remove or block any User Submissions from the Service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Registration</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">You may browse the Site and view Content without registering, but as a condition to using certain aspects of the Service, you may be required to register with Company and select a password and screen name (&quot;User ID&quot;). You shall provide Company with accurate, complete, and updated registration information. Failure to do so shall constitute a breach of the Terms of Use, which may result in immediate termination of your Company account. You shall not (i) select or use as a User ID or domain a name of another person with the intent to impersonate that person; (ii) use as a User ID or domain a name subject to any rights of a person other than you without appropriate authorization; or (iii) use as a User ID or domain a name that is otherwise offensive, vulgar or obscene. Company reserves the right to refuse registration of, or cancel a User ID and domain in its sole discretion. You are solely responsible for activity that occurs on your account and shall be responsible for maintaining the confidentiality of your Company password. You shall never use another user&rsquo;s account without such other user&rsquo;s express permission. You will immediately notify Company in writing of any unauthorized use of your account, or other account related security breach of which you are aware.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Projects: Fund-Raising and Commerce</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Fundraisingscript.com (&quot;Fundraisingscript&quot;) is a venue for fund-raising and commerce. Fundraisingscript allows certain users (&quot;Project Creators&quot;) to list projects and raise funds from other users (&quot;Backers&quot;). All funds are collected for Project Creators by Paypal and Amazon Payments. Fundraisingscript?does not, at any time, receive or hold any monies intended for Project Creators.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Fundraisingscript shall not be liable for your interactions with any organizations and/or individuals found on or through the Fundraisingscript?service. This includes, but is not limited to, delivery of goods and services, and any other terms, conditions, warranties or representations associated with listings on Fundraisingscript. Fundraisingscriptdoes not oversee the performance or punctuality of projects. Fundraisingscript?is not responsible for any damage or loss incurred as a result of any such dealings. All dealings are solely between you and such organizations and/or individuals. Fundraisingscript is under no obligation to become involved in disputes between Backers and Project Creators, or between site members and any third party. In the event of a dispute, you release Fundraisingscript, its officers, employees, agents and successors in rights from claims, damages and demands of every kind, known or unknown, suspected or unsuspected, disclosed or undisclosed, arising out of or in any way related to such disputes and our service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Though Fundraisingscript?cannot be held liable for the actions of a Project Creator, Project Creators are nevertheless wholly responsible for fulfilling obligations both implied and stated in any project listing they create. Fundraisingscript?reserves the right to cancel a project listing and refund all associated members' payments at any time for any reason. Fundraisingscript?reserves the right to remove a project listing from public listings for any reason.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Fundraisingscript?makes no guarantees regarding the performance or fairness of Paypal and Amazon Payments. Additionally, because of occasional failures of some credit cards, Fundraisingscript?cannot guarantee the full receipt of the targeted amount.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Project Creators may initiate refunds at their own discretion. Fundraisingscript is not responsible for issuing refunds for funds that have been collected by Project Creators.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Fundraisingscript?reserves the right to cancel, interrupt or suspend a listing at any time for any reason.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Fees and Payments</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Joining Fundraisingscript?is free. However, we do charge fees for certain services. All fees are collected for Fundraisingscript?by Paypal Or Amazon Payments. When you use a service that has a fee you have an opportunity to review and accept the fees that you will be charged, which we may change from time to time. Changes to that Policy are effective after we provide you with notice by posting the changes on the Sites. We may choose to temporarily change the fees for our services for promotional events (for example, free listing days) or new services, and such changes are effective when we post the temporary promotional event or new service on the Sites.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">You are responsible for paying all fees and applicable taxes associated with your use of the site. In the event a listing is removed from the Service for violating the Terms of Use, all fees paid will be non-refundable, unless in its sole discretion Fundraisingscript?determines that a refund is appropriate.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Third Party Site</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">The Service may permit you to link to other websites or resources on the Internet, and other websites or resources may contain links to the Site. When you access third party websites, you do so at your own risk. These other websites are not under Company's control, and you acknowledge that Company is not responsible or liable for the content, functions, accuracy, legality, appropriateness or any other aspect of such websites or resources. The inclusion of any such link does not imply endorsement by Company or any association with its operators. You further acknowledge and agree that Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such Content, goods or services available on or through any such website or resource.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Content and License</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">You agree that the Service contains Content specifically provided by Company or its partners and that such Content is protected by copyrights, trademarks, service marks, patents, trade secrets or other proprietary rights and laws. You shall abide by and maintain all copyright notices, information, and restrictions contained in any Content accessed through the Service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Company grants each user of the Site and/or Service a worldwide, non-exclusive, non-sublicensable and non-transferable license to use, modify and reproduce the Content, solely for personal, non-commercial use. Use, reproduction, modification, distribution or storage of any Content for other than personal, non-commercial use is expressly prohibited without prior written permission from Company, or from the copyright holder identified in such Content's copyright notice. You shall not sell, license, rent, or otherwise use or exploit any Content for commercial use or in any way that violates any third party right.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Third Party Intellectual Property &mdash; Copyright Notifications</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Fundraisingscript?respects the intellectual property of others, and we ask our users to do the same. Fundraisingscript?may, in appropriate circumstances and at its discretion, terminate the accounts of users who infringe the intellectual property rights of others. Fundraisingscript will remove infringing materials in accordance with the Digital Millennium Copyright Act if properly notified that content infringes copyright.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">If you believe that your work has been copied in a way that constitutes copyright infringement, please provide Fundraisingscript&quot;s Copyright Agent with a written notification containing at least the following information (please confirm these requirements with your legal counsel, or see Section 512(c)(3) of the U.S. Copyright Act, 17 U.S.C. ?512(c)(3), for more information):</div>
+<ul style="margin-top: 0px; margin-right: 1.5em; margin-bottom: 1.5em; margin-left: 1.5em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; list-style-type: square; list-style-position: initial; list-style-image: initial; ">
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">a description of the copyrighted work that you claim has been infringed;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">a description of where the material that you claim is infringing is located on the Fundraisingscript Site, sufficient for Fundraisingscript to locate the material;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">your address, telephone number, and email address;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">a statement by you that the above information in your notice is accurate and, under penalty of perjury, that you are the copyright owner or authorized to act on the copyright owner's behalf.</li>
+</ul>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">If you believe that your work has been removed or disabled by mistake or misidentification, please provide the Fundraisingscript&rsquo;s Copyright Agent with a written counter-notification containing at least the following information (please confirm these requirements with your legal counsel or see Section 512(g)(3) of the U.S. Copyright Act, 17 U.S.C. ?512(g)(3), for more information):</div>
+<ul style="margin-top: 0px; margin-right: 1.5em; margin-bottom: 1.5em; margin-left: 1.5em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; list-style-type: square; list-style-position: initial; list-style-image: initial; ">
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">a physical or electronic signature of the subscriber/user of the Services;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">identification of the material that has been removed or to which access has been disabled and the location at which the material appeared before it was removed or access to it was disabled;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">a statement made under penalty of perjury that the subscriber has a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled; and</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">the subscriber's name, address, telephone number, and a statement that the subscriber consents to the jurisdiction of the Federal District Court for the judicial district in which the address is located, or if the subscriber's address is outside of the United States, for any judicial district in which the service provider may be found, and that the subscriber will accept service of process from the person who provided notification under subsection (c)(1)(C) or an agent of such person.</li>
+</ul>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">You acknowledge that if you fail to comply with all of the aforementioned notice requirements, your notification or counter-notification may not be valid and that Fundraisingscript may ignore such incomplete or inaccurate notices without liability of any kind.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Under Section 512(f) of the Copyright Act, 17 U.S.C. ?512(f), any person who knowingly materially misrepresents that material or activity is infringing or was removed or disabled by mistake or misidentification may be subject to liability.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Our designated copyright agent for notice of alleged copyright infringement is:</div>
+<blockquote style="margin-top: 1.5em; margin-right: 1.5em; margin-bottom: 1.5em; margin-left: 1.5em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: italic; font-size: 13px; vertical-align: baseline; quotes: ''; color: rgb(102, 102, 102); ">Rockers Technologies<br />
+Gujarat, India 390010<br />
+Email: nishu@rockersinfo.com</blockquote>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Intellectual Property Rights &mdash; Project Creators</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">The Service provides you with the ability upload your content to the Site. Company will not have any ownership rights in your content, however, Company needs the following license to perform the Service. You hereby grant to Company the worldwide, non-exclusive, royalty-free, right to (and to allow others acting on its behalf to) (i) use, host, display, and otherwise perform the Service on your behalf (e.g., use, host, stream, transmit, playback, transcode, copy, display, feature, market, sell, distribute and otherwise exploit (&quot;Host&quot;) the content, along with all associated copyrightable works or metadata, including without limitation photographs, graphics, and descriptive text (&quot;Artworks&quot;) in connection with the Service); (ii) (and to allow other users to) stream, transmit, playback, download, display, feature, distribute, collect, and otherwise use the content and Artworks; and (iii) use and publish, and to permit others to use and publish, the name(s), trademarks, likenesses, and personal and biographical materials of you and the members of your group, in connection with the provision of the Service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">You agree to pay all royalties and other amounts owed to any person or entity due to your submission of your content to the Service or the Company&rsquo;s Hosting of the content as contemplated by these Terms of Use.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">To enable Company to Host your content pursuant to the above provisions, you hereby grant to Company the worldwide, non-exclusive, perpetual, royalty-free, sublicensable and transferable right to use, reproduce, copy, and display your trademarks, service marks, slogans, logos or similar proprietary rights (collectively, the &quot;Trademarks&quot;) solely in connection with the Service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Intellectual Property Rights &mdash; Users</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">The Service may provide users with the ability to add, create, upload, submit, distribute, collect, or post (&quot;Submitting&quot; or &quot;Submission&quot;) content, videos, audio clips, written forum comments, data, text, photographs, software, scripts, graphics, or other information to the Site (collectively, the &quot;User Submissions&quot;). By Submitting User Submissions on the Site or otherwise through the Service, you:</div>
+<ul style="margin-top: 0px; margin-right: 1.5em; margin-bottom: 1.5em; margin-left: 1.5em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; list-style-type: square; list-style-position: initial; list-style-image: initial; ">
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">acknowledge that by Submitting any User Submission to the Site, you are publishing that User Submission, and that you may be identified publicly by your User ID in association with any such User Submission;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">by Submitting any User Submissions through the Site or the Service, you hereby do and shall grant Company a worldwide, non-exclusive, perpetual, irrevocable, royalty-free, fully paid, sublicensable and transferable license to use, edit, modify, reproduce, distribute, prepare derivative works of, display, perform, and otherwise fully exploit the User Submissions in connection with the Site, the Service and Company&rsquo;s (and its successors and assigns&rsquo;) business, including without limitation for promoting and redistributing part or all of the Site (and derivative works thereof) or the Service in any media formats and through any media channels (including, without limitation, third party websites). You also hereby do and shall grant each user of the Site and/or the Service a non-exclusive license to access your User Submissions through the Site and the Service, and to use, edit, modify, reproduce, distribute, prepare derivative works of, display and perform such User Submissions solely for personal, non-commercial use. For clarity, the foregoing license grant to Company does not affect your other ownership or license rights in your User Submission(s), including the right to grant additional licenses to the material in your User Submission(s), unless otherwise agreed in writing;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">represent and warrant, and can demonstrate to Company&rsquo;s full satisfaction upon request that you (i) own or otherwise control all rights to all content in your User Submissions, or that the content in such User Submissions is in the public domain, (ii) you have full authority to act on behalf of any and all owners of any right, title or interest in and to any content in your User Submissions to use such content as contemplated by these Terms of Use and to grant the license rights set forth above, (iii) you have the permission to use the name and likeness of each identifiable individual person and to use such individual&rsquo;s identifying or personal information as contemplated by these Terms of Use; and (iv) you are authorized to grant all of the aforementioned rights to the User Submissions to Company and all users of the Service;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">you agree to pay all royalties and other amounts owed to any person or entity due to your Submission of any User Submissions to the Service;</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">that the use or other exploitation of such User Submissions by Company and use or other exploitation by users of the Site and Service as contemplated by this Agreement will not infringe or violate the rights of any third party, including without limitation any privacy rights, publicity rights, copyrights, contract rights, or any other intellectual property or proprietary rights; and</li>
+    <li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">understand that Company shall have the right to delete, edit, modify, reformat, excerpt, or translate any materials, content or information submitted by you; and that all information publicly posted or privately transmitted through the Site is the sole responsibility of the person from which such content originated and that Company will not be liable for any errors or omissions in any content; and that Company cannot guarantee the identity of any other users with whom you may interact in the course of using the Service.</li>
+</ul>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Company does not endorse and has no control over any User Submission. Company cannot guarantee the authenticity of any data which users may provide about themselves. You acknowledge that all Content accessed by you using the Service is at your own risk and you will be solely responsible for any damage or loss to any party resulting therefrom.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Termination</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Company may terminate your access to all or any part of the Service at any time, with or without cause, with or without notice, effective immediately, which may result in the forfeiture and destruction of all information associated with your membership. If you wish to terminate your account, you may do so by following the instructions on the Site. Any fees paid hereunder are non-refundable. All provisions of the Terms of Use which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Warranty Disclaimer</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Company has no special relationship with or fiduciary duty to you. You acknowledge that Company has no control over, and no duty to take any action regarding: which users gains access to the Site; what Content you access via the Site; what effects the Content may have on you; how you may interpret or use the Content; or what actions you may take as a result of having been exposed to the Content. You release Company from all liability for you having acquired or not acquired Content through the Site. The Site may contain, or direct you to websites containing, information that some people may find offensive or inappropriate. Company makes no representations concerning any Content contained in or accessed through the Site, and Company will not be responsible or liable for the accuracy, copyright compliance, legality or decency of material contained in or accessed through the Site or the Service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; AND IS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, AND ANY WARRANTIES IMPLIED BY ANY COURSE OF PERFORMANCE OR USAGE OF TRADE, ALL OF WHICH ARE EXPRESSLY DISCLAIMED. COMPANY, AND ITS DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS, PARTNERS AND CONTENT PROVIDERS DO NOT WARRANT THAT: (A) THE SERVICE WILL BE SECURE OR AVAILABLE AT ANY PARTICULAR TIME OR LOCATION; (B) ANY DEFECTS OR ERRORS WILL BE CORRECTED; (C) ANY CONTENT OR SOFTWARE AVAILABLE AT OR THROUGH THE SERVICE IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; OR (D) THE RESULTS OF USING THE SERVICE WILL MEET YOUR REQUIREMENTS. YOUR USE OF THE SERVICE IS SOLELY AT YOUR OWN RISK.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">SOME STATES DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">Electronic Communications Privacy Act Notice (18USC 2701-2711): COMPANY MAKES NO GUARANTY OF CONFIDENTIALITY OR PRIVACY OF ANY COMMUNICATION OR INFORMATION TRANSMITTED ON THE SITE OR ANY WEBSITE LINKED TO THE SITE. Company will not be liable for the privacy of email addresses, registration and identification information, disk space, communications, confidential or trade-secret information, or any other Content stored on Company&rsquo;s equipment, transmitted over networks accessed by the Site, or otherwise connected with your use of the Service.</div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: bold; font-style: inherit; font-size: 1.3em; vertical-align: baseline; color: rgb(34, 34, 34); line-height: 1.25em; "><b><font size="4">Indemnification</font></b></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-size: 13px; vertical-align: baseline; ">You shall defend, indemnify, and hold harmless Company, its affiliates and each of its, and its affiliates employees, contractors, directors, suppliers and representatives from all liabilities, claims, and expenses, including reasonable attorneys' fees, that arise from or relate to your use or misuse of, or access to, the Site, Service, Content or otherwise from your User Submissions, violation of the Terms of Use, or infringement by you, or any third party using the your account, of any intellectual property or other right of any person or entity. Company reserves the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will assist and cooperate with Company i</div>	</div>
+		
+   
+  <!--====================left end==============--> 
+  
+  
+		
+		   <div class="rightcol">
+	<ul id="posts" class="quicklinks">
+	<h2>Quick Links</h2>
+	<li class="sidelinks"><a href="http://spicyfund.com/demo/"><span>Home</a></span></li>
+	
+	<li class="sidelinks"><a href="http://spicyfund.com/demo/home/content/about-us/5"><span>About Us</span></a></li>	
+	
+	
+	</ul>
+	
+	<div class="clear"></div>
+	
+	<div style="margin-top:20px;">
+
+
+	<a href="http://spicyfund.com/demo/home/signup" style="text-decoration:none;">
+	
+		
+	<img src="http://spicyfund.com/demo/images2/create.jpg" border="0" name="start" onmouseout="this.src='http://spicyfund.com/demo/images2/create.jpg'" onmouseover="this.src='http://spicyfund.com/demo/images2/create_hover.jpg'" />
+	</a>
+	
+	</div>
+	
+</div>  
+	   	   	
+		 	   <div class="clear"></div>
+
+
+	  
+</div>
+</div>
+
+ <!--==========================footer=====================-->
+<div id="footer2">
+	<div class="wrap930">
+	
+	
+	<div id="footer_category">
+	
+	
+		
+	<div class="left"><h3 style="padding-top:15px;">BROWSE CATEGORIES</h3>
+	
+		
+		
+	<ul>
+	
+	<li><a href="http://spicyfund.com/demo/project/category/11">Accidents & Personal Crisis</a></li><li><a href="http://spicyfund.com/demo/project/category/20">animals</a></li><li><a href="http://spicyfund.com/demo/project/category/18">Babies, Kids & Family</a></li><li><a href="http://spicyfund.com/demo/project/category/17">Celebrations & Special Events</a></li><li><a href="http://spicyfund.com/demo/project/category/12">Creative Projects: Art, Music,</a></li><li><a href="http://spicyfund.com/demo/project/category/8">Earthquake</a></li><li><a href="http://spicyfund.com/demo/project/category/3">Education fund</a></li><li><a href="http://spicyfund.com/demo/project/category/5">Gifts</a></li><li><a href="http://spicyfund.com/demo/project/category/9">Hospital</a></li><li><a href="http://spicyfund.com/demo/project/category/15">Medical, Illness & Healing</a></li></ul><ul><li><a href="http://spicyfund.com/demo/project/category/7">Poor people</a></li><li><a href="http://spicyfund.com/demo/project/category/13">Sports, Teams & Clubs</a></li><li><a href="http://spicyfund.com/demo/project/category/6">Tsunami Charity</a></li><li><a href="http://spicyfund.com/demo/project/category/14">Weddings & Honeymoons</a></li>	
+	
+	</ul>
+		
+	
+	</div>
+	
+	
+	<div class="left" style="padding: 12px 0px 20px 27px;"><h3 style="font-size:16px; padding-left:37px;">Stay in the loop</h3>
+<div class="set" style="padding-left:30px;">
+				<a href="#" class="fix" id="fix_twitter">aa</a>
+				<a href="http://www.facebook.com/pages/fundraisingscriptcom/187170521330689" class="fix" id="fix_fb">ss</a>
+				<a href="http://spicyfund.com/demo/feed" target="_blank" class="fix" id="fix_rss">aa</a>
+			</div>
+			<div style="clear:both;"></div>
+		
+			
+			<div style="clear:both; height:15px;"></div>
+			
+			<script type="text/javascript" language="javascript">
+				function newsletter_remove()
+				{
+					if(document.getElementById('subscribe_email').value == "Enter email" || document.getElementById('subscribe_email').value == "please enter email" || document.getElementById('subscribe_email').value == "please enter valid email")
+					{
+						document.getElementById('subscribe_email').value = "";
+					}
+				}
+				function newsletter_reset()
+				{
+					if(document.getElementById('subscribe_email').value == "")
+					{
+						document.getElementById('subscribe_email').value = document.getElementById('newsletter_val').value;
+					}
+				}
+				function newsletter_validate()
+				{
+					if(document.getElementById('subscribe_email').value == "" || document.getElementById('subscribe_email').value == "Enter email" || document.getElementById('subscribe_email').value == "please enter email" || document.getElementById('subscribe_email').value == "please enter valid email")
+					{		 
+						
+						document.getElementById('subscribe_email').value = "please enter email";
+						document.getElementById('newsletter_val').value = "please enter email";
+											
+						return false;
+					}else{
+						
+						
+						
+						var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;    
+						
+						var str=document.getElementById('subscribe_email').value;
+						if(str.test(pattern))
+						{  						
+							document.frmsearch.submit();
+						}
+						else
+						{
+							document.getElementById('subscribe_email').value = "please enter valid email";
+							document.getElementById('newsletter_val').value = "please enter valid email";
+											
+							return false;
+						}
+					}
+				}
+			</script>
+			
+		<div id="newsletter_bg">
+			<form action="http://spicyfund.com/demo/newsletter/subscribe" method="post" name="frmnewsletter" onsubmit="return newsletter_validate()" autocomplete="off">		<div class="input_box"><input type="text" name="subscribe_email" id="subscribe_email" value="Enter email" onblur="newsletter_reset()" onfocus="newsletter_remove()" class="subscribe_email_box" />
+		<input type="hidden" name="newsletter_val" id="newsletter_val" value="please enter email" />
+		</div>
+		
+		<div class="newsletter_submit"><input type="submit" name="submit_newsletter" id="submit_newsletter" class="submit_newsletter_button" value="Join"/> </div>
+		
+		</div>
+			
+			
+			
+			
+			
+			</div>
+			
+			
+		
+		<div style="float:right;">
+				<div class="fb-like-box" style="background-color:#FFFFFF;" data-href="http://www.facebook.com/pages/fundraisingscriptcom/187170521330689" data-width="292" data-show-faces="true" data-stream="false" data-header="false"></div>
+				</div>
+		
+		
+
+	
+	</div>
+	
+	<div style="clear:both;"></div>
+	
+	
+	</div>
+</div>
+
+	
+<div id="footer" style="background-color:#FFFFFF;opacity: 0.8;filter: alpha(opacity=60); border-top:1px solid #999999;">
+	<div class="wrap930">	
+	
+	
+		<div class="left">
+		
+			<p style="padding:17px 0px 0px 0px;">Copyright &copy 2011 All Rights Reserved.</p>
+
+		</div>
+		
+		<div class="left" style="padding:8px 0px 0px 0px;"><img src="http://spicyfund.com/demo/images/footer_paypal.gif" border="0" /></div>
+		
+		<div class="right">
+			<p id="footer_link" style="margin-top:16px;"><a href="http://spicyfund.com/demo/home/content/about-us/5">About Us</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/help">Help</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/help/guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/home/content/terms-and-conditions/12">Terms and Conditions</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/home/content/privacy-policy/13">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/home/contact_us">Contact Us</a>&nbsp;|&nbsp;</p>
+			
+		</div>
+		
+		
+		<div class="clear"></div>
+		
+		
+		<div align="center"></div>
+		
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23165973-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!--==========================footer end=====================--> 
+ 
+</body>
+</html>

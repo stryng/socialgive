@@ -1,0 +1,46 @@
+.hover {
+	background: url(../images2/star.png); 
+	z-index: 10;
+}
+
+
+
+.clearleft {
+	clear: left;
+}
+
+
+.floatleft div span {
+	float: left;
+	cursor: pointer;
+}
+
+.clearleft {
+	clear: left;
+}
+
+
+
+.floatleft {
+	float: left;
+}
+
+.highlight {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	position: relative;
+	bottom: 9px;
+	top:3px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.star_rating {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #93784b;
+	float: left;
+	width: 100px;
+	position: relative;
+	top: 10px;
+}

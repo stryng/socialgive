@@ -1,0 +1,90 @@
+#SlideItMoo_outer {  
+	/*width:510px; */
+	display:block; 
+	position:relative; 
+	width: 930px !important;
+	padding:0px;
+	margin:0px;
+}
+/* create custom forward-backward buttons for this container */
+#SlideItMoo_outer .SlideItMoo_forward,
+#SlideItMoo_outer .SlideItMoo_back{ 
+	/*display:block; */
+	position:absolute; 
+	cursor:pointer; 
+	width:25px; 
+	height:40px; 
+	bottom:0px; 
+	right:-10px; 
+	top:170px;
+	background:url(images/last.gif) no-repeat center;  
+}
+#SlideItMoo_outer .SlideItMoo_back { 
+	left:-10px; 
+	background:url(images/first.gif) no-repeat center;  
+}
+.SlideItMoo_back:hover, .SlideItMoo_forward:hover {
+	opacity:0.7;
+}
+
+/* the width is set to show the number of thumbnails that will be visible */
+#SlideItMoo_inner{ 
+	position:relative ; 
+	overflow:hidden ; 
+	 /* set a display width to make the slider look good in case js is disabled */
+	margin:0px;
+	padding:0px;
+	width:900px !important;
+	margin-left:15px;
+}
+/* the thumbnails container; set a width on it so everything will be fine */
+#SlideItMoo_items { 
+	display:block; 
+	position:relative; 
+}
+/* single element design */
+#SlideItMoo_items div.SlideItMoo_element { 
+	display:block; 
+	position:relative; 
+	float:left; 
+	font-size:11px; 
+	width:225px; 
+	text-align:center; 
+	color:#FFFFFF;
+	background: url(images2/bg_box.png) top no-repeat;
+	height: 365px;
+	padding:5px 0px 14px 0px;
+}
+#SlideItMoo_items div.SlideItMoo_element:hover { 
+	background: url(images2/bg_box_hover.gif) top no-repeat;
+}
+.p_img{
+/*	width:190px;
+	height:190px;*/
+	margin:0px 5px 5px 5px;
+	border:1px solid #999999;
+}
+.SlideItMoo_element h3, .slider_div h3.tt{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:left;
+	margin-left:20px;
+	padding:12px 10px 10px 0px;
+}
+
+.SlideItMoo_element h3 a { color:#000000; text-decoration:none; }
+
+.SlideItMoo_element p, .slider_div p{
+color: #bdbdbd;
+	font-size: 14px;
+	margin: 5px 0;
+	text-align:left;
+	padding-left:20px;
+	}
+.SlideItMoo_element small, .slider_div small{
+font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #7cbe11;
+	display: block;
+}

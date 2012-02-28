@@ -1,0 +1,1234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<title>Help provide funds for the area school,aaravshah,India</title>
+<meta name="description" content="Help provide funds for the area school,aaravshah,India" />
+<meta name="keywords" content="Help provide funds for the area school,aaravshah,India" />
+
+<link href="http://spicyfund.com/demo/css/style.css" rel="stylesheet" type="text/css" />
+<link href="http://spicyfund.com/demo/FundrisingCss.css" rel="stylesheet" type="text/css" />
+
+<script src="http://spicyfund.com/demo/js/mootools-core-1.3-full.js" type="text/javascript"></script> 
+<script src="http://spicyfund.com/demo/js/mootools-more-1.3-full.js" type="text/javascript"></script> 
+<script src="http://spicyfund.com/demo/js/mootools-art-0.87.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src="http://spicyfund.com/demo/js/clickMe.js" ></script>
+
+
+<!--[if lte IE 7]> 
+    
+	<link href="http://spicyfund.com/demo/ie7.css" rel="stylesheet" type="text/css" />
+	
+<![endif]-->
+
+<!--[if gte IE 7]>
+<style type="text/css">
+.file_img input[type=file], .file_upload input[type=file]{
+/*opacity: 0;
+-moz-opacity: 0;
+filter:progid : DXImageTransform.Microsoft.Alpha(opacity=0);*/
+cursor:pointer;
+filter:alpha(opacity=0);
+        -moz-opacity:0.5;
+        -khtml-opacity: 0.9;
+        opacity: 0.0;
+}
+
+
+
+.searchtext{
+	padding:3px 8px;
+}
+.campaigns{
+	padding:20px 0px 0px 0px;
+}
+.widget .widgetlogo{
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+
+<div style="margin:0px auto; color:#003366; font-weight:bold;  position:fixed; height:25px; background:#D8D8D8;  opacity:0.6;  filter:alpha(opacity=60);width:100%;">
+
+<a href="http://spicyfund.com/demo/home/login" style="font-weight:bold; color:#006600;">Click here for User Demo</a> Login Email: <b style="color:#000000;">user@demo.com</b> and Password: <b style="color:#000000;">userdemo</b>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/admin/" target="_blank" style="font-weight:bold; color:#006600;">Click here for Admin Demo</a> Login Username: <b style="color:#000000;">admin</b> and Password: <b style="color:#000000;">admin</b>
+
+</div>
+	
+    
+    
+
+
+  <script type="text/javascript">
+	function autotext(){
+		var xmlHttp;
+		try{
+			xmlHttp=new XMLHttpRequest();// Firefox, Opera 8.0+, Safari
+		}
+		catch (e){
+			try{
+				xmlHttp=new ActiveXObject("Msxml2.XMLHTTP"); // Internet Explorer
+			}
+			catch (e){
+				try{
+					xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch (e){
+					alert("No AJAX!?");
+					return false;
+				}
+			}
+		}
+		xmlHttp.onreadystatechange=function(){
+			if(xmlHttp.readyState==4){
+				document.getElementById('autoc').innerHTML=xmlHttp.responseText;
+				
+				if(document.getElementById('srhdiv'))
+				{
+					var hht = document.getElementById('srhdiv').offsetHeight + 'px';
+					document.id('autoc').set('tween', {
+						duration: 1000,
+						transition: Fx.Transitions.Bounce.easeOut // This could have been also 'bounce:out'
+					}).tween('height', hht);
+				}else{
+					var hht = '0px';
+					document.getElementById('autoc').style.height = '0px';
+				}
+			}
+		}
+		var text = document.getElementById('searchprj').value;
+		xmlHttp.open("GET","http://spicyfund.com/demo//home/search_autocomplete/"+text+"/"+1330435881,true);
+		xmlHttp.send(null);
+	}
+	
+	function selecttext(el)
+	{
+		document.getElementById('searchprj').value = el.innerHTML;
+		document.id('autoc').set('tween', {}).tween('height', '0px');
+		setTimeout(function(){
+			el.parentNode.innerHTML = '';
+		},500);
+		document.frmsearch.submit();
+	}
+	
+	window.addEvent('domready', function(){
+		document.id('autoc').set('tween', {}).tween('height', '0px');
+	});
+</script>
+	
+<!--
+      <div id="rec-donation"> Total Transaction
+        <h6></h6>
+        Total Earnings
+        <h6>$ </h6>
+      </div>
+     
+
+-->
+<style type="text/css">
+#header h1 a,#header h1 a:visited{
+	text-indent: -9999px;
+	display:block;
+	width: 291px;
+	height: 49px;
+	background: url(http://spicyfund.com/demo/upload/orig/21103logo.png) no-repeat;
+	margin: 20px 0 0 0;
+}
+#header h1 a:hover{
+	background: url(http://spicyfund.com/demo/upload/orig/94315logo_hover.png) no-repeat;
+}
+#header h1 a,#header h1 a:visited{
+	cursor:pointer;
+}
+#header a{
+	color: #555;
+}
+</style>
+
+<div id="header">
+<div class="wrap930" id="header">
+    <!--<a href=""><div class="logo"></div></a>-->
+	<h1 class="left"><a href="http://spicyfund.com/demo/">Fund Raising Script</a></h1>
+  
+  
+  
+ 
+
+<style type="text/css">
+
+.fb_button, .fb_button_rtl
+{
+background:none;
+background-color:none;
+}
+
+.fb_button fb_button_medium, .fb_button_text
+{
+width:20px;
+height:20px;
+}
+
+.fb_button .fb_button_text, .fb_button_rtl .fb_button_text
+{
+border:none;
+background:none;
+}
+
+.fb_button .fb_button_text, .fb_button_rtl .fb_button_text
+{
+margin:0px;
+padding:0px;
+}
+
+#fb-root div{ left:0; }
+
+</style>
+    	
+					
+		
+		
+		
+		
+	<div id="testdiv" class="right">
+		 
+			
+			<table><tr>
+            
+            
+            <td align="left" valign="top"><a href="http://gofundmeclone.com/spanish/" title="Spanish" target="_blank"><img src="http://spicyfund.com/demo/images/spain.png" border="0" /></a></td>
+			
+			<td align="left" valign="top" style="padding-right:50px;"><a href="http://spicyfund.com/fund_portuguese" title="Portuguese" target="_blank"><img src="http://spicyfund.com/demo/images/portuguese.png" border="0" /></a></td>
+            
+            
+			 <div  id="fb-root"></div>
+			 <script type="text/javascript">
+			window.fbAsyncInit = function() {
+	        	FB.init({appId: '267602683309826', status: true, cookie: true, xfbml: true});
+	 
+	            /* All the events registered */
+	            FB.Event.subscribe('auth.login', function(response) {
+	    			// do something with response
+	             //   login();
+	        	});
+	
+	            FB.Event.subscribe('auth.logout', function(response) {
+	            // do something with response
+	               // logout();
+	          	});
+	   		};
+	
+	        (function() {
+		        var e = document.createElement('script');
+	            e.type = 'text/javascript';
+	            e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		        e.async = true;
+	            document.getElementById('fb-root').appendChild(e);
+	   	 	}());
+	 
+	        function login(){
+	        	//document.location.href = "";
+	     	}
+	
+	        function logout(){
+	        	//document.location.href = "";
+	 		}
+		</script>
+		<!-- END OF FB CODE -->	
+						<td valign="top">
+			
+				<a href="https://www.facebook.com/login.php?api_key=267602683309826&cancel_url=http://spicyfund.com/demo/home&display=page&fbconnect=1&next=http://spicyfund.com/demo/home/facebook&return_session=1&session_version=3&v=1.0&req_scope=email,read_stream,offline_access,user_birthday,status_update,publish_stream"><img src="http://spicyfund.com/demo/images/facebook.png" border="0" height="21" width="21" name="MyImage" onmouseover="document.MyImage.src='http://spicyfund.com/demo/images/facebook-ho.png';" onmouseout="document.MyImage.src='http://spicyfund.com/demo/images/facebook.png';"/></a>
+			
+					
+		</td>
+		<td valign="top">
+		
+			<a  href="http://spicyfund.com/demo/home/twitter_auth" >
+<img src="http://spicyfund.com/demo/images/twitter.png" width="21" height="21" name="twitter_img" onmouseover="document.twitter_img.src='http://spicyfund.com/demo/images/twitter-ho.png';" onmouseout="document.twitter_img.src='http://spicyfund.com/demo/images/twitter.png';" alt="sign in with twitter" border="0" /></a>
+
+</td>
+			
+			
+			<td>
+			
+						
+			<a href="http://spicyfund.com/demo/home/login">Sign In</a> |
+			
+			<!-- Mask to cover the whole screen -->
+			 
+			<a href="http://spicyfund.com/demo/home/signup" class='sign'>Sign Up</a>						
+			</td></tr></table>
+			
+		 </div>
+		 
+		 
+		 
+
+
+
+	
+		 
+		 	
+	
+<div class="clear"></div>
+	  
+	  
+				
+		
+	  
+		<div class="navigation">
+			<div class="nav">
+				<ul id="minislide">
+					<li><a href="http://spicyfund.com/demo/">Home</a></li>  <li class="line">|</li>   
+					<li><a href="http://spicyfund.com/demo/home/search">Search</a></li>  <li class="line">|</li>
+					<li><a href="http://spicyfund.com/demo/help">Help</a><ul></ul></li><li class="line">|</li><li><a href="http://spicyfund.com/demo/home/content/terms-and-conditions/12">Terms and Conditions</a><ul></ul></li><li class="line">|</li><li><a href="http://spicyfund.com/demo/home/contact_us">Contact Us</a><ul></ul></li><li class="line">|</li>				</ul>
+			</div>
+			<script type="text/javascript" language="javascript">
+				function remove_text()
+				{
+					if(document.getElementById('searchprj').value == "search" || document.getElementById('searchprj').value == "please enter search keyword")
+					{
+						document.getElementById('searchprj').value = "";
+					}
+				}
+				function set_text()
+				{
+					if(document.getElementById('searchprj').value == "")
+					{
+						document.getElementById('searchprj').value = document.getElementById('searchval').value;
+					}
+				}
+				function form_validate()
+				{
+					if(document.getElementById('searchprj').value == "" || document.getElementById('searchprj').value == "search" || document.getElementById('searchprj').value == "please enter search keyword")
+					{
+						document.getElementById('searchprj').value = "please enter search keyword";
+						document.getElementById('searchval').value = "please enter search keyword";
+						return false;
+					}else{
+						document.frmsearch.submit();
+					}
+				}
+			</script>
+			<div class="search">
+			<form action="http://spicyfund.com/demo/home/search" method="post" name="frmsearch" onsubmit="return form_validate()" autocomplete="off">			
+					<input type="text" name="searchprj" id="searchprj" class="searchtext" value="please enter search keyword" onfocus="remove_text();" onblur="set_text()" onkeyup="autotext();" />
+					<input type="button" class="searchbtn" value="Search" onclick="form_validate();" />
+					<input type="hidden" name="searchval" id="searchval" value="please enter search keyword" />
+				</form>
+				<div id="autoc" ></div>
+			</div>
+		</div>
+	
+<div class="clear"></div>
+   
+  </div>
+  
+ 
+  
+</div>
+
+<div id="headerbar">
+<div class="wrap930">
+ <!--   follow-like code - start -->
+  
+	 <script type="text/javascript">
+    function ajaxfollow_proj(id)
+    {   
+		var strURL="http://spicyfund.com/demo/project/follow_project/"+id;
+		
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			//alert(xmlhttp.responseText);
+			if(xmlhttp.responseText=='login_failed'){
+				window.location.href='http://spicyfund.com/demo/home/login/aHR0cDovL3NwaWN5ZnVuZC5jb20vZGVtby9wcm9qZWN0cy9oZWxwLXByb3ZpZGUtZnVuZHMtZm9yLXRoZS1hcmVhLXNjaG9vbC8xNjA=';
+				
+				}
+			else{
+			document.getElementById("follow").innerHTML=xmlhttp.responseText;}
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+	 function ajaxunfollow_proj(id)
+    {   
+		var strURL="http://spicyfund.com/demo/project/unfollow_project/"+id;
+		// alert(strURL);
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 // alert('res'+xmlhttp.responseText);
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			
+			document.getElementById("follow").innerHTML=xmlhttp.responseText;
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+	
+	  function ajaxlike_proj(id)
+     {   
+		var strURL="http://spicyfund.com/demo/project/like_project/"+id;
+		// alert(strURL);
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 // alert('res'+xmlhttp.responseText);
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			//alert(xmlhttp.responseText);
+			if(xmlhttp.responseText=='login_failed'){
+				window.location.href='http://spicyfund.com/demo/home/login/aHR0cDovL3NwaWN5ZnVuZC5jb20vZGVtby9wcm9qZWN0cy9oZWxwLXByb3ZpZGUtZnVuZHMtZm9yLXRoZS1hcmVhLXNjaG9vbC8xNjA=';
+				
+				}
+			else{
+			document.getElementById("like").innerHTML=xmlhttp.responseText;}
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+	 function ajaxunlike_proj(id)
+    {   
+		var strURL="http://spicyfund.com/demo/project/unlike_project/"+id;
+		// alert(strURL);
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+			 // alert('res'+xmlhttp.responseText);
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{	
+			
+			document.getElementById("like").innerHTML=xmlhttp.responseText;
+			}
+		  }
+		xmlhttp.open("GET",strURL,true);
+		xmlhttp.send();
+    }
+
+
+</script>
+      
+  <!-- End - follow-like code -->
+	
+
+	<a href="http://spicyfund.com/demo/home/search" class='browse'>Browse All Projects</a></div>
+</div> 
+
+<div class="clear"></div>
+
+
+ 
+   	 	    
+	
+<script type="text/javascript" src="http://spicyfund.com/demo/js/jquery.js" ></script>
+<div id="container">
+<div class="wrap930">	
+	
+	<div class="con_left2">
+		<!--====================left==============--> 
+
+
+
+
+<!--Header title-->
+
+		
+	<div style="margin-left:11px; background:#F5F5F5; width:602px; height:189px; position:relative;">	
+		
+<h3 class="stitle" title="Help provide funds for the area school">Help provide funds for the area school</h3>
+
+
+
+<h3 class="stitle" style="font-size: 17px; padding-top:0px; padding-bottom:10px; line-height:19px;">
+Lessons in computer programming and English fluency were previously unavailable to school                </h3>
+
+<div class="clear"></div>
+
+
+
+
+
+
+<div style="float:left;margin-top:10px; margin-left:11px; ">
+
+<table border="0" cellpadding="0" cellspacing="0">
+
+<tr>
+
+<td align="left" valign="middle"><img src="http://spicyfund.com/demo/images/reward.png" onmouseout="this.src='http://spicyfund.com/demo/images/reward.png'" onmouseover="this.src='http://spicyfund.com/demo/images/reward-ho.png' " border="0" /></td>
+
+<td align="left" valign="middle">&nbsp;&nbsp;&nbsp;<a href="http://spicyfund.com/demo/project/category/3" style="text-transform:capitalize; color:#000000;font-size:13px;" >Education fund</a></td>
+
+
+<td align="left" valign="middle" style="padding-left:15px;"><img src="http://spicyfund.com/demo/images2/flag.png"  border="0" /></td>
+
+<td align="left" valign="middle" style="text-transform:capitalize; color:#000000;font-size:13px;">, </td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+<script type="text/javascript" language="javascript">
+	function change_div(did)
+	{
+		document.getElementById('sp_overview').style.display = "none";
+		document.getElementById('sp_updates').style.display = "none";
+		document.getElementById('sp_comments').style.display = "none";
+		document.getElementById('sp_backers').style.display = "none";
+		document.getElementById('sp_gallery').style.display = "none";
+		
+		document.getElementById('sp_'+did).style.display = "block";
+		
+		document.getElementById('h_overview').className = "h3sel2";
+		document.getElementById('h_updates').className = "h3sel2";
+		document.getElementById('h_comments').className = "h3sel2";
+		document.getElementById('h_backers').className = "h3sel2";
+		document.getElementById('h_gallery').className = "h3sel2";
+		
+		document.getElementById('h_'+did).className = "h3notsel2";
+	}
+</script>
+
+
+<div style="  margin:25px 0px 0px 10px; bottom:0px; position:absolute; ">
+	<h3 id="h_overview" class="h3notsel2" onclick="change_div('overview');">Overview</h3>
+	<h3 id="h_updates" class="h3sel2" onclick="change_div('updates');">Updates</h3>
+	<h3 id="h_comments" class="h3sel2" onclick="change_div('comments');">Comments</h3>
+    <h3 id="h_backers" class="h3sel2" onclick="change_div('backers');">Backers</h3>
+    <h3 id="h_gallery" class="h3sel2" onclick="change_div('gallery');">Gallery</h3>&nbsp;
+	
+</div>
+
+
+
+
+
+
+</div>
+
+
+<!--Header title-->
+
+
+
+
+<div class="clear"></div>
+
+
+<div id="sp_overview" class="divsel" style="display:block; margin:0px; background:none; border:none;" >
+
+
+	
+			
+		
+<div align="left" style="margin-top:14px;">
+
+
+	<style type="text/css">
+	iframe, embed{
+	width:602px;
+	height:340px;
+	
+	}
+	
+	</style>
+	
+	
+ 
+ 
+ <img src="http://spicyfund.com/demo/upload/thumb/images_(3).jpg" border="0" width="602" height="340" /> 
+ 
+ 	
+		</div>
+		
+		
+		<div style="padding:10px 0px 0px 0px;">
+	
+			
+			<script type="text/javascript" src="http://spicyfund.com/demo/js/jquery.min.js"></script>
+			
+			
+			<script type="text/javascript" src="http://spicyfund.com/demo/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+			<link rel="stylesheet" type="text/css" href="http://spicyfund.com/demo/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+			<script type="text/javascript">
+			jQuery(document).ready(function() {
+				
+				
+				jQuery("#various1").fancybox({
+					'titlePosition'		: 'inside',
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none'
+				});
+				
+				
+				
+				
+	
+				
+			});
+		
+			function selectall()
+			{ 
+			
+				var text_val=document.getElementById('printurl');
+				
+				text_val.focus();
+				
+				text_val.select();
+				
+				if (!document.all) return; // IE only
+				
+				r= text_val.createTextRange();
+				
+				r.execCommand('Copy');
+			
+			}
+	</script>
+			
+            
+            
+           
+            
+   
+            
+			
+	<table align="center" width="602" border="0" cellpadding="0" cellspacing="0" style="border:1px solid #B5D7FA;background:#E3F1FE;border-radius:3px;">
+				<tr>
+					
+					<td valign="top" style="padding:10px;">
+						<a class="pg_img"  href="javascript:void(0)" onclick="javascript:window.open('http://www.facebook.com/share.php?u=http://spicyfund.com/demo/projects/help-provide-funds-for-the-area-school/160','name1','height=250,width=550,top=200,left=300')"  ><img src="http://spicyfund.com/demo/images/11.png" alt="" width="32" height="32" border="0" style="float:left;" /></a>
+						
+						
+						
+ 					</td>
+					
+					<td width="1" bgcolor="#B5D7FA"></td>
+					
+					<td valign="top" style="padding:10px;">
+						<a class="pg_img"   href="javascript:void(0)" onclick="javascript:window.open('http://twitter.com/home?status=http://spicyfund.com/demo/projects/help-provide-funds-for-the-area-school/160','name1','height=250,width=550,top=200,left=300')" ><img src="http://spicyfund.com/demo/images/22.png" alt="" width="32" height="32" border="0" style="float:left;" /></a>
+					</td>
+					
+					
+					<td width="1" bgcolor="#B5D7FA"></td>
+					
+					<td valign="top" style="padding:16px 10px 10px 10px;">					
+						<a id="various1" href="#inline1"><img src="http://spicyfund.com/demo/images/4.png" alt="" width="66" height="20" border="0" style="float:left;" /></a>							
+						<div style="display:none;">
+					<div id="inline1" style="width:550px;height:400px;overflow:hidden;">
+			
+			
+			<div style="float:left;">
+						
+				<!--	embed code-->							
+				<div class="slider_div">
+<h3 ><a href="http://spicyfund.com/demo/projects/help-provide-funds-for-the-area-school/160" style="text-decoration:none;" target="_blank">Help provide funds for th</a></h3>	   
+	<div>
+<a href="http://spicyfund.com/demo/projects/help-provide-funds-for-the-area-school/160" target="_blank"><img class="p_img" src="http://spicyfund.com/demo/upload/thumb/images_(3).jpg" alt="" width="190" height="150" title="Help provide funds for the area school" /></a>		 </div> 
+		 
+		 
+		 <div style="margin:5px 15px 0px 15px;">
+				<small style=" text-align:left; font-style:normal; color:#7DBF0E; font-weight:normal; font-size:12px;"><span style="color:#000000; ">By :</span> <a href="http://spicyfund.com/demo/member/56">aarav</a></small>		
+				
+		</div>
+		 
+		 
+<p style="text-align:left; font-size:13px; color:#A0A0A0;">
+
+
+Lessons in computer
+programming and English
+fluency were previously
+unavailable to school	
+	</p>
+	
+	
+<div id="flag_div">
+						
+						<div id="flagsr" style="float:left;"><img src="http://spicyfund.com/demo/images2/flag.png" border="0" /></div>
+						<div id="flag_detailsr"><small style="text-align:left; font-style:italic; color:#999999; font-weight:normal;"><span style="text-transform:capitalize;"></span>,<span style="text-transform:capitalize;"></span></small>&nbsp;</div>
+			
+			</div>
+	
+	 
+	 <div class="progress"><div class="progreen" style="width:0%;max-width:100%;"></div></div>
+<p class="stats">
+			
+		<span class="stleft">$0.00 RAISED</span>
+	
+		<span class="stright">
+		53 DAYS LEFT	</span>
+	</p>
+	</div>
+			   <!--	embed code-->
+			</div>
+			
+			
+						<div style="float:right;margin-top:100px;">						
+	
+	
+	<textarea name="area1"  id="area1" style="padding: 10px 10px 10px 10px;-moz-border-radius: 8px;-webkit-border-radius: 8px;background: #FAFAFA;border: 1px solid lightGrey; height:75px; width:275px;"  readonly="readonly"><div id='widgets'></div><script src='http://spicyfund.com/demo/project/widgets_code/s/red/160' type='text/javascript'></script></textarea>
+							
+							
+						</div>
+							
+		</div>
+					</div>
+					</td>
+				
+					
+					
+					<td width="1" bgcolor="#B5D7FA"></td>
+					
+					<td valign="top" style="padding:8px 8px 4px 8px;">
+						<div class="searchbg2" style="height:25px; width:380px; background-color:#FFFFFF; ">
+					
+                    
+                        
+                        <input name="printurl" type="text" style="float:left;width:360px;height:25px;border:none;background:none;" value="http://spicyfund.com/demo/projects/help-provide-funds-for-the-area-school/160" id="printurl"   /><img src="http://spicyfund.com/demo/images/7.png" alt="" width="14" height="14" border="0" style="float:right;margin:5px 0px 0px 3px;" onclick="selectall()" />
+						</div>
+					</td>
+					
+					
+				</tr>
+			</table>
+            
+            
+            
+           
+			
+                
+			
+			
+			
+		</div>
+		
+		
+		<div class="clear"></div>
+
+<br/>
+<div align="left" style="width:602px; border-bottom:1px solid #EAEAEA;"></div>
+<br/>
+	
+	<div class="inner_content_two" style="background:none; border:none; padding:0px;">
+	
+			<div style="padding:10px 0px;">
+				<h3 style="font-size:14px;">Date : 06 Aug,2011</h3>
+				<p>&nbsp;</p>
+<div><font size="5" color="#003366">KO - Itto - Flilou, Midelt, Morocco</font></div>
+<div><font size="2" color="#000000"><br />
+Ko-Itto is a humanitarian project I have founded aimed at improving the conditions of the community and to provide access to education to the village of Flilou in Morocco.<br />
+</font></div>
+<div><font size="2">The name Ko-Itto is derived from my mother's name Koulli Itto, in her memory. She and my father were born in the village of Flilou and did not have access to education. Some of my siblings and I were born in Flilou before my father moved our family to Midelt so the children could attend school. At that time, things were difficult under the French authority. Today access to education, resources, and safe, clean living are still difficult due to other reasons and have resulted in a community with social problems. I have since moved to Vancouver, BC, Canada where I'm devoted to making conditions in Flilou better.<br />
+</font></div>
+<div><font size="2">A positive change in the village is that some girls are now attending school. Less than ten years ago there were no girls in the school. The hope is that parents will keep their children in school. One focus will be on useful practical skills to benefit the students, as it's important to Ko-Itto to preserve the culture and heritage of the village.<br />
+</font></div>
+<div><font size="2">Phase 1 of the project includes improvements to windows, floors, roofs, washrooms, etc.in the school. Heat will be required for winter weather. And the school programs need to be developed as well.<br />
+</font></div>
+<div><font size="2">The new<span class="Apple-converted-space"></span><em>Foyer*<span class="Apple-converted-space"></span></em>being built will be similar to a community center. It will be a visible and integral part of the community helping develop connections with surrounding villages. Various programs and events will be available to children, parents, and it will offer specific programs to mothers and other groups. The facility will provide a healthy lunch to school children, and welcome visiting professionals (such as Global Prespectives of Richmond, BC Canada - see blog) as well as international guests.<br />
+</font></div>
+<div><font size="2">This initiative will make improvements to the existing school, and will provide accessible education to all children in the village, boys and girls. Another focus is to develop a healthy community to include proper hygiene and sanitation, which can be difficult with challenges in climate and weather with extremely cold winters and flash floods creating poor water conditions each year. A water filtration system is necessary as currently livestock and people share the same water.<br />
+</font></div>
+<div><font size="2">With some funds of my own as well as from Richmond High School of BC, Canada, we have built the foundation of the building and a new roof in one of the classrooms, the same room used by the Canadian Dentist's of Global Perspectives. But much more work needs to be done to complete the facility.<br />
+</font></div>
+<div><font size="2">Phase 2 includes completing the Foyer* begun by the students of Richmond High School. We'll than extend out into the village working together as a community to continue with any improvements as required. A training room and a nursery-infirmary for visiting doctors will be available along with a training room with sewing machines and knitting equipment. This would ultimatly offer the possibility of producing quality local Berber carpets and tapestries. Please see blog section for further details.</font></div>
+<p>&nbsp;</p>			</div>
+	
+	</div>
+	
+</div>
+
+<div id="sp_updates" class="divsel" style="background:none; border:none; padding:0px; margin-left:11px; margin-top:23px;">
+	
+	
+	<ul>
+	<li class="common_li"> <div align="center" style="text-align:center; font-weight:bold; font-size:14px;">No Updates</div></li>	</ul>
+	
+	
+	
+	
+</div>
+
+<div id="sp_comments" class="divsel" style="background:none; border:none; padding:0px; margin-left:11px; margin-top:23px;">
+	<ul>
+    
+    		
+            
+                         
+					<li>  <div style="font-size:13px; padding:15px;">Please <a href="http://spicyfund.com/demo/home/signup/aHR0cDovL3NwaWN5ZnVuZC5jb20vZGVtby9wcm9qZWN0cy9oZWxwLXByb3ZpZGUtZnVuZHMtZm9yLXRoZS1hcmVhLXNjaG9vbC8xNjA=" style="font-weight:bold;">Sign Up</a> or  <a href="http://spicyfund.com/demo/home/login/aHR0cDovL3NwaWN5ZnVuZC5jb20vZGVtby9wcm9qZWN0cy9oZWxwLXByb3ZpZGUtZnVuZHMtZm9yLXRoZS1hcmVhLXNjaG9vbC8xNjA=" style="font-weight:bold;">Login</a> to Post Comment.</div> </li>
+                      
+                     
+                <li class="common_li"> <div align="center" style="text-align:center; font-weight:bold; font-size:14px;">No Comments</div></li>			
+			
+	</ul>
+</div>
+
+
+<div id="sp_backers" class="divsel" style="background:none; border:none; padding:0px; margin-left:11px; margin-top:23px;">
+
+	<div class="inner_content_two">
+	
+			<div style="padding:10px 0px;">
+	
+				
+                                
+                
+                <div align="center" style="text-align:center; font-weight:bold; font-size:14px;">No backers</div>
+                
+                                
+                
+            </div>
+            
+     </div>
+     
+</div>
+
+<div id="sp_gallery" class="divsel" style="background:none; border:none; padding:0px; margin-left:11px; margin-top:23px;">
+
+<style type="text/css">
+#preview4{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	margin-left:0px;
+	}
+	</style>
+    
+<div class="inner_content_two">
+</div>
+
+
+</div>
+
+<div style="clear:both;"></div>
+
+
+
+
+<script type="text/javascript">
+	this.imagePreview = function(){	
+	/* CONFIG */
+		
+		xOffset = 10;
+		yOffset = 30;
+		
+		// these 2 variable determine popup's distance from the cursor
+		// you might want to adjust to get the right result
+		
+	/* END CONFIG */
+	jQuery("a.preview4").hover(function(e){
+		this.t = this.title;
+		this.title = "";	
+		var c = (this.t != "") ? "<br/>" + this.t : "";
+		jQuery("body").append("<p id='preview4'><img src='"+ this.href +"' alt='Image preview' height='200' width='300' />"+ c +"</p>");								 
+		jQuery("#preview4")
+			.css("top",(e.pageY - xOffset) + "px")
+			.css("left",(e.pageX + yOffset) + "px")			
+			.fadeIn("fast");						
+    },
+	function(){
+		this.title = this.t;	
+		jQuery("#preview4").remove();
+    });	
+	jQuery("a.preview4").mousemove(function(e){
+		jQuery("#preview4")
+			.css("top",(e.pageY - xOffset) + "px")			
+			.css("left",(e.pageX + yOffset) + "px");
+			
+	});			
+};
+
+
+// starting the script on page load
+jQuery(document).ready(function(){
+	imagePreview();
+});
+</script>		
+
+
+
+
+
+
+
+
+
+<div style="clear:both;"></div>
+
+
+	  
+
+<!--====================left end==============--> 
+	</div>   
+		
+		   
+<script type="text/javascript" language="javascript">
+
+	
+	
+$(document).ready(function() {
+	
+
+	$("[id^=rating_]").hover(function() {
+
+
+		rid = $(this).attr("id").split("_")[1];
+		$("#rating_"+rid).children("[class^=star_]").children('img').hover(function() {
+
+			$("#rating_"+rid).children("[class^=star_]").children('img').removeClass("hover");
+
+			/* The hovered item number */
+			var hovered = $(this).parent().attr("class").split("_")[1];
+	
+			while(hovered > 0) {
+				$("#rating_"+rid).children(".star_"+hovered).children('img').addClass("hover");
+				hovered--;
+			}
+
+		});
+	});
+
+	$("[id^=rating_]").children("[class^=star_]").click(function() {
+	
+	
+		
+		var current_star = $(this).attr("class").split("_")[1];
+		var rid = $(this).parent().attr("id").split("_")[1];
+
+
+	
+		$('#rating_'+rid).load('http://spicyfund.com/demo/project/rate_project/',{id:rid,rating:current_star});
+		
+
+		
+
+	});
+
+
+
+
+});
+	
+	
+</script>
+
+<link href="http://spicyfund.com/demo/css/rating.css" rel="stylesheet" type="text/css" />
+
+<div class="sidebar">
+
+<div class="clear"></div>
+
+
+<div style="padding: 10px 10px 10px 10px;-moz-border-radius: 8px;-webkit-border-radius: 8px;background: #FAFAFA;border: 1px solid lightGrey; height:75px; width:263px; margin-bottom:10px;">
+
+<table border="0" cellpadding="0" cellspacing="0">
+
+<tr>
+<td align="left" valign="top" rowspan="2"> 
+
+<a href="http://spicyfund.com/demo/member/56"><img src="http://spicyfund.com/demo/upload/thumb/no_man.gif" height="72" width="72" border="0" style=" border:1px solid lightGrey;" /></a>
+
+
+</td>
+
+<td align="left" valign="middle" style="padding-left:15px; font-weight:bold; font-size:16px;"><a href="http://spicyfund.com/demo/member/56" style="color:#114A75;text-transform:capitalize; ">aarav shah</a></td>
+
+</tr>
+
+
+<tr><td align="left" valign="middle" style="padding-left:15px; text-transform:capitalize; font-size:14px;">bhruch,Gujarat</td></tr>
+
+</table>
+
+
+</div>
+
+
+<div class="clear"></div>
+
+
+
+	<div class="donate_link">
+		<div class="title" style="margin-top: -9px;">
+								
+			$ 0.00
+				
+								
+		</div>
+		<div class="dtarget">			
+			<div class="tgren" style="width:0%;max-width:100%;"></div>			
+			<div class="txt">Raise of $8500 Goal</div>
+		</div>
+		<div class="dl">
+			53<br /><p>Days Left</p>		</div>
+		<div class="drr">
+			Rating :
+
+
+
+
+<div style=" margin-top:3px;">
+<form method="post" action="">
+<div class="floatleft">
+		<div id="rating_160">
+			<span class="star_1"><img src="http://spicyfund.com/demo/images2/star_blank.png" alt=""    /></span>
+			<span class="star_2"><img src="http://spicyfund.com/demo/images2/star_blank.png" alt=""  /></span>
+			<span class="star_3"><img src="http://spicyfund.com/demo/images2/star_blank.png" alt=""  /></span>
+			<span class="star_4"><img src="http://spicyfund.com/demo/images2/star_blank.png" alt=""  /></span>
+			<span class="star_5"><img src="http://spicyfund.com/demo/images2/star_blank.png" alt=""  /></span>
+		</div>
+	</div>
+	
+	</form>
+
+</div>	
+	
+	
+		</div>
+		<div class="clear"></div>
+		<form action="#">
+		<div class="dright">
+			<p>Online Backing are quick, easy & secure!</p>			
+				
+				
+				<a href="http://spicyfund.com/demo/reward/160">Back This Project</a>				
+				
+				
+			</div>
+		</form>
+	</div>
+	
+	<!--<div class="dques"><a href="#">Question about this project?</a></div>-->
+	
+
+	
+	<div class="clear"></div>
+		
+	<div class="clear"></div>
+</div>  
+	   	   	
+		 	   <div class="clear"></div>
+
+
+	  
+</div>
+</div>
+
+ <!--==========================footer=====================-->
+<div id="footer2">
+	<div class="wrap930">
+	
+	
+	<div id="footer_category">
+	
+	
+		
+	<div class="left"><h3 style="padding-top:15px;">BROWSE CATEGORIES</h3>
+	
+		
+		
+	<ul>
+	
+	<li><a href="http://spicyfund.com/demo/project/category/11">Accidents & Personal Crisis</a></li><li><a href="http://spicyfund.com/demo/project/category/20">animals</a></li><li><a href="http://spicyfund.com/demo/project/category/18">Babies, Kids & Family</a></li><li><a href="http://spicyfund.com/demo/project/category/17">Celebrations & Special Events</a></li><li><a href="http://spicyfund.com/demo/project/category/12">Creative Projects: Art, Music,</a></li><li><a href="http://spicyfund.com/demo/project/category/8">Earthquake</a></li><li><a href="http://spicyfund.com/demo/project/category/3">Education fund</a></li><li><a href="http://spicyfund.com/demo/project/category/5">Gifts</a></li><li><a href="http://spicyfund.com/demo/project/category/9">Hospital</a></li><li><a href="http://spicyfund.com/demo/project/category/15">Medical, Illness & Healing</a></li></ul><ul><li><a href="http://spicyfund.com/demo/project/category/7">Poor people</a></li><li><a href="http://spicyfund.com/demo/project/category/13">Sports, Teams & Clubs</a></li><li><a href="http://spicyfund.com/demo/project/category/6">Tsunami Charity</a></li><li><a href="http://spicyfund.com/demo/project/category/14">Weddings & Honeymoons</a></li>	
+	
+	</ul>
+		
+	
+	</div>
+	
+	
+	<div class="left" style="padding: 12px 0px 20px 27px;"><h3 style="font-size:16px; padding-left:37px;">Stay in the loop</h3>
+<div class="set" style="padding-left:30px;">
+				<a href="#" class="fix" id="fix_twitter">aa</a>
+				<a href="http://www.facebook.com/pages/fundraisingscriptcom/187170521330689" class="fix" id="fix_fb">ss</a>
+				<a href="http://spicyfund.com/demo/feed" target="_blank" class="fix" id="fix_rss">aa</a>
+			</div>
+			<div style="clear:both;"></div>
+		
+			
+			<div style="clear:both; height:15px;"></div>
+			
+			<script type="text/javascript" language="javascript">
+				function newsletter_remove()
+				{
+					if(document.getElementById('subscribe_email').value == "Enter email" || document.getElementById('subscribe_email').value == "please enter email" || document.getElementById('subscribe_email').value == "please enter valid email")
+					{
+						document.getElementById('subscribe_email').value = "";
+					}
+				}
+				function newsletter_reset()
+				{
+					if(document.getElementById('subscribe_email').value == "")
+					{
+						document.getElementById('subscribe_email').value = document.getElementById('newsletter_val').value;
+					}
+				}
+				function newsletter_validate()
+				{
+					if(document.getElementById('subscribe_email').value == "" || document.getElementById('subscribe_email').value == "Enter email" || document.getElementById('subscribe_email').value == "please enter email" || document.getElementById('subscribe_email').value == "please enter valid email")
+					{		 
+						
+						document.getElementById('subscribe_email').value = "please enter email";
+						document.getElementById('newsletter_val').value = "please enter email";
+											
+						return false;
+					}else{
+						
+						
+						
+						var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;    
+						
+						var str=document.getElementById('subscribe_email').value;
+						if(str.test(pattern))
+						{  						
+							document.frmsearch.submit();
+						}
+						else
+						{
+							document.getElementById('subscribe_email').value = "please enter valid email";
+							document.getElementById('newsletter_val').value = "please enter valid email";
+											
+							return false;
+						}
+					}
+				}
+			</script>
+			
+		<div id="newsletter_bg">
+			<form action="http://spicyfund.com/demo/newsletter/subscribe" method="post" name="frmnewsletter" onsubmit="return newsletter_validate()" autocomplete="off">		<div class="input_box"><input type="text" name="subscribe_email" id="subscribe_email" value="Enter email" onblur="newsletter_reset()" onfocus="newsletter_remove()" class="subscribe_email_box" />
+		<input type="hidden" name="newsletter_val" id="newsletter_val" value="please enter email" />
+		</div>
+		
+		<div class="newsletter_submit"><input type="submit" name="submit_newsletter" id="submit_newsletter" class="submit_newsletter_button" value="Join"/> </div>
+		
+		</div>
+			
+			
+			
+			
+			
+			</div>
+			
+			
+		
+		<div style="float:right;">
+				<div class="fb-like-box" style="background-color:#FFFFFF;" data-href="http://www.facebook.com/pages/fundraisingscriptcom/187170521330689" data-width="292" data-show-faces="true" data-stream="false" data-header="false"></div>
+				</div>
+		
+		
+
+	
+	</div>
+	
+	<div style="clear:both;"></div>
+	
+	
+	</div>
+</div>
+
+	
+<div id="footer" style="background-color:#FFFFFF;opacity: 0.8;filter: alpha(opacity=60); border-top:1px solid #999999;">
+	<div class="wrap930">	
+	
+	
+		<div class="left">
+		
+			<p style="padding:17px 0px 0px 0px;">Copyright &copy 2011 All Rights Reserved.</p>
+
+		</div>
+		
+		<div class="left" style="padding:8px 0px 0px 0px;"><img src="http://spicyfund.com/demo/images/footer_paypal.gif" border="0" /></div>
+		
+		<div class="right">
+			<p id="footer_link" style="margin-top:16px;"><a href="http://spicyfund.com/demo/home/content/about-us/5">About Us</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/help">Help</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/help/guidelines">Guidelines</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/home/content/terms-and-conditions/12">Terms and Conditions</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/home/content/privacy-policy/13">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://spicyfund.com/demo/home/contact_us">Contact Us</a>&nbsp;|&nbsp;</p>
+			
+		</div>
+		
+		
+		<div class="clear"></div>
+		
+		
+		<div align="center"></div>
+		
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23165973-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!--==========================footer end=====================--> 
+ 
+</body>
+</html>

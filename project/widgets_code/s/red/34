@@ -1,0 +1,12 @@
+if('s'=='s')
+{
+	document.getElementById('widgets').innerHTML = '<iframe align="middle" id="bh_frame" scrolling="no" width="225" height="380" frameBorder="0" src="http://spicyfund.com/demo/project/widgets_page/s/red/34"></iframe>';
+}
+if('s'=='m')
+{
+	document.getElementById('widgetm').innerHTML = '<iframe align="middle" id="bh_frame" scrolling="no" width="300" height="300" frameBorder="0" src="http://spicyfund.com/demo/project/widgets_page/s/red/34"></iframe>';
+}
+if('s'=='l')
+{
+	document.getElementById('widgetl').innerHTML = '<iframe align="middle" id="bh_frame" scrolling="no" width="472" height="400" frameBorder="0" src="http://spicyfund.com/demo/project/widgets_page/s/red/34"></iframe>';
+}
